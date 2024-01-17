@@ -1,5 +1,5 @@
 name: second_action
-on: workflow_dispatch
+on: push
 jobs:
   print:
     runs-on: ubuntu-latest
