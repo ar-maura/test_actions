@@ -6,8 +6,7 @@ jobs:
     steps:
       - name: preaction
         run: echo Hello_World
-  tratata:
-    needs: print
+  tratata:    
     runs-on: ubuntu-latest
     steps:
       - name: preaction
@@ -17,7 +16,7 @@ jobs:
       - name: postaction
         run: echo "POST_TRATATA"
   hobana:
-    needs: print
+    needs: [print, tratata]
     runs-on: ubuntu-latest
     steps:
       - name: preaction
